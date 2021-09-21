@@ -132,9 +132,4 @@ export class Table extends ExcelComponent {
     const text = $(event.target).text();
     this.updateTextInStore(text);
   }
-  // onMousemove() {
-  //   console.log("mousemove");
-  // }
-
-  // onMouseup() {}
 }

@@ -23,8 +23,8 @@ export class DomListener {
   }
 
   removeDOMListeners() {
-    const method = getMethodName(listener);
     this.listeners.forEach((listener) => {
+      const method = getMethodName(listener);
       this.$root.off(listener, this[method]);
     });
   }
